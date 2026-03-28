@@ -26,7 +26,7 @@ The website is divided into multiple ocean layers:
 * 🌌 **Midnight Zone** – Complete darkness with glowing creatures
 * 🕳️ **Abyssal Zone** – Extreme depth and pressure
 * ⚫ **Trench Zone** – Deepest parts of the ocean
-* 🚢 **Challenger Deep** – The deepest known point on Earth
+
 
 ---
 
@@ -62,14 +62,19 @@ ocean-depth/
 ---
 
 ## 📸 Preview
-
-> Screenshots will be added soon...
+<img width="1903" height="1016" alt="Screenshot 2026-03-29 000601" src="https://github.com/user-attachments/assets/e5ad650b-25be-483d-83b7-c14bd8be8eee" />
+<img width="1892" height="1017" alt="Screenshot 2026-03-29 000623" src="https://github.com/user-attachments/assets/37a2fd8c-579a-47e8-b2c6-87c387020826" />
+<img width="1882" height="1032" alt="Screenshot 2026-03-29 000727" src="https://github.com/user-attachments/assets/2a059197-a809-4a97-ba06-3198a0f96645" />
+<img width="1891" height="1029" alt="Screenshot 2026-03-29 000743" src="https://github.com/user-attachments/assets/b3c5ac8d-fe3a-4115-ba4d-f52e6d877d58" />
+<img width="1891" height="1029" alt="Screenshot 2026-03-29 000743" src="https://github.com/user-attachments/assets/6e8daaf3-0b26-4935-9edb-5e66a1c90258" />
+<img width="1866" height="1023" alt="Screenshot 2026-03-29 000809" src="https://github.com/user-attachments/assets/307c9560-7636-4fc2-9089-ffbe18b2167f" />
+<img width="1866" height="1023" alt="Screenshot 2026-03-29 000809" src="https://github.com/user-attachments/assets/1c8fbb66-9583-424d-8f95-e34fedc13b9f" />
 
 ---
 
 ## 🔗 Live Demo
 
-> Deployment link will be added soon...
+https://orewa-singhaayush.github.io/ocean-depth-explorer/#trench
 
 ---
 
