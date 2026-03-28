@@ -62,13 +62,13 @@ ocean-depth/
 ---
 
 ## 📸 Preview
-<img width="1903" height="1016" alt="Screenshot 2026-03-29 000601" src="https://github.com/user-attachments/assets/e5ad650b-25be-483d-83b7-c14bd8be8eee" />
-<img width="1892" height="1017" alt="Screenshot 2026-03-29 000623" src="https://github.com/user-attachments/assets/37a2fd8c-579a-47e8-b2c6-87c387020826" />
-<img width="1882" height="1032" alt="Screenshot 2026-03-29 000727" src="https://github.com/user-attachments/assets/2a059197-a809-4a97-ba06-3198a0f96645" />
-<img width="1891" height="1029" alt="Screenshot 2026-03-29 000743" src="https://github.com/user-attachments/assets/b3c5ac8d-fe3a-4115-ba4d-f52e6d877d58" />
-<img width="1891" height="1029" alt="Screenshot 2026-03-29 000743" src="https://github.com/user-attachments/assets/6e8daaf3-0b26-4935-9edb-5e66a1c90258" />
-<img width="1866" height="1023" alt="Screenshot 2026-03-29 000809" src="https://github.com/user-attachments/assets/307c9560-7636-4fc2-9089-ffbe18b2167f" />
-<img width="1866" height="1023" alt="Screenshot 2026-03-29 000809" src="https://github.com/user-attachments/assets/1c8fbb66-9583-424d-8f95-e34fedc13b9f" />
+<img width="1903" height="1016" alt="home" src="https://github.com/user-attachments/assets/7fe4639d-01f6-4828-9586-09913fd7ae07" />
+<img width="1892" height="1017" alt="sunlight" src="https://github.com/user-attachments/assets/d905d9e5-be11-43d0-886a-dab5b220d9bd" />
+<img width="1894" height="1032" alt="twilight" src="https://github.com/user-attachments/assets/5aff8b15-710a-4af0-9870-72ea43e0a2a3" />
+<img width="1882" height="1032" alt="midnight1" src="https://github.com/user-attachments/assets/ad7fd8a1-e587-474c-97f0-506384cdb1a4" />
+<img width="1891" height="1029" alt="midnight2" src="https://github.com/user-attachments/assets/4cc3f105-2727-4347-bbb7-4319f8e499b8" />
+<img width="1866" height="1023" alt="abyssal" src="https://github.com/user-attachments/assets/69a5201d-7424-40fb-8a1e-1a2a39bf03c7" />
+<img width="1901" height="1030" alt="trench" src="https://github.com/user-attachments/assets/11a3eb36-d832-4154-a062-54647d3af2f7" />
 
 ---
 
