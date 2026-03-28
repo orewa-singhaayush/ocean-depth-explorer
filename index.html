@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ocean Depth</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bilbo&family=Meddon&family=Qwigley&display=swap" rel="stylesheet">
+
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <header class="header">
+      <a href="#home" class="logo">
+        <span>Ocean Depth</span>
+      </a>
+      <i class="fa-solid fa-compass" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home">Surface</a>
+        <a href="#sunlight">Sunlight</a>
+        <a href="#twilight">Twilight</a>
+        <a href="#midnight">Midnight</a>
+        <a href="#abyssal">Abyssal</a>
+        <a href="#trench">Trench</a>
+      </nav>
+    </header>
+    <!-- Side Navigation / Depth Gauge -->
+<aside class="depth-nav">
+    
+    <div class="depth-info">
+        <div class="depth-title">Depth Gauge</div>
+        <div class="depth-value" id="depth-display">0m</div>
+    </div>
+
+<a href="#home" class="active" data-depth="0m" title="Surface"></a>
+<a href="#sunlight" data-depth="200m" title="Sunlight"></a>
+<a href="#twilight" data-depth="1000m" title="Twilight"></a>
+<a href="#midnight" data-depth="4000m" title="Midnight"></a>
+<a href="#abyssal" data-depth="6000m" title="Abyssal"></a>
+<a href="#trench" data-depth="10000m" title="Trench"></a>
+
+</aside>
+    <div id="cursor"></div>
+    <section class="home" id="home">
+      <div class="letsgo">
+        <h2>At the Edge of the Deep</h2>
+        <p>
+          At the surface, the ocean feels calm and endless, reflecting the sky
+          above. But beneath these gentle waves lies a vast, mysterious world
+          waiting to be explored. This is where your journey begins—diving from
+          light into the unknown depths of the ocean.
+        </p>
+      </div>
+    </section>
+    <section class="sunlight" id="sunlight">
+      <h5>0-200m Sunlight Zone</h5>
+
+      <div class="sunlightzone">
+        <h2>The Ocean’s Golden Beginning</h2>
+        <p>
+          The Sunlight Zone is the upper layer of the ocean where sunlight penetrates the water, allowing life to thrive.
+        </p>
+      </div>
+
+      <div class="infocards">
+
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>Marine Life</h3>
+              <p>Hover to explore</p>
+            </div>
+            <div class="card-back">
+              <p>Fish, corals, dolphins and turtles thrive here.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>Sunlight Power</h3>
+              <p>Hover to explore</p>
+            </div>
+            <div class="card-back">
+              <p>Photosynthesis supports the entire ocean ecosystem.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card hidden">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>Conditions</h3>
+              <p>Hover to explore</p>
+            </div>
+            <div class="card-back">
+              <p>Warm water, high oxygen, clear visibility.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+<section class="twilight" id="twilight">
+
+  <!-- Depth Label -->
+  <h5>200m–1000m • Twilight Zone</h5>
+
+  <!-- Heading Content -->
+  <div class="twilightzone">
+    <h2>The Edge of <i>Darkness</i></h2>
+    <p>
+      Sunlight fades to a spectral glow. Creatures evolve photophores,
+      mirrored scales, and massive eyes to survive in the dimming blue.
+    </p>
+  </div>
+
+  <!-- Interactive Creature Cards -->
+  <div class="creature-cards">
+
+    <!-- Anglerfish -->
+    <div class="creature-card hidden" id="card1">
+      <h3>✦ Anglerfish</h3>
+      <span>200–2,000m</span>
+
+      <button onclick="toggleCard('card1')">+ DISCOVER</button>
+
+      <p class="card-info">
+        "The anglerfish lures prey with a glowing lure called an esca —
+        a natural fishing rod of living light."
+      </p>
+    </div>
+
+    <!-- Giant Squid -->
+    <div class="creature-card pink hidden" id="card2">
+      <h3>◇ Giant Squid</h3>
+      <span>300–1,000m</span>
+
+      <button onclick="toggleCard('card2')">+ DISCOVER</button>
+
+      <p class="card-info">
+        "The giant squid has enormous eyes to detect faint flashes
+        in near-total darkness."
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Floating Glow Particles -->
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+
+</section>
+<section class="midnight" id="midnight">
+
+  <h5>1,000m – 4,000m • Midnight Zone</h5>
+
+  <div class="midnight-text">
+    <h2>The Ocean’s Dark  <span>Heart</span></h2>
+    <p>
+      No sunlight. No seasons. Near 4°C. Bioluminescence is the only light —
+      every flash might signal a predator or a mate.
+    </p>
+  </div>
+
+  <!-- CREATURE CARDS -->
+  <div class="creature-cards">
+
+    <!-- Viperfish -->
+    <div class="creature-card purple hidden" id="mid1">
+      <h3>⬡ Viperfish</h3>
+      <span>200–5,000m</span>
+
+      <button onclick="toggleCard('mid1')">+ DISCOVER</button>
+
+      <p class="card-info">
+        "The viperfish uses photophores along its belly to mimic starlight
+        and confuse predators lurking below."
+      </p>
+    </div>
+
+    <!-- Dumbo Octopus -->
+    <div class="creature-card blue hidden" id="mid2">
+      <h3>◉ Dumbo Octopus</h3>
+      <span>3,000–4,000m</span>
+
+      <button onclick="toggleCard('mid2')">+ DISCOVER</button>
+
+      <p class="card-info">
+        "Named after Disney’s elephant, Dumbo octopuses flap ear-like fins
+        to glide — the deepest-living octopuses ever found."
+      </p>
+    </div>
+
+  </div>
+
+  <!-- FACT BOX -->
+  <div class="fact-box hidden">
+    <h4>■ DEEP ABYSS FACTS</h4>
+
+    <div class="fact-content" id="factText">
+      Press "Reveal a fact" to discover...
+    </div>
+
+      <button onclick="nextFact()">
+        REVEAL A FACT →
+      </button>
+  </div>
+
+</section>
+<section class="abyssal" id="abyssal">
+  <h5>400m–6000m • Abyssoplagic Zone</h5>
+  <div class="aby-wrapper">
+
+    <div class="aby-content">
+      <h2>The Silent Abyss</h2>
+      <p>
+        Below 4000m, darkness is absolute. Pressure is crushing.
+        Life survives in silence and extreme conditions.
+      </p>
+    </div>
+
+<div class="aby-grid">
+
+  <div class="aby-item">
+    <img src="assets/viperfish.jpg" alt="">
+    <span>Viperfish</span>
+  </div>
+
+  <div class="aby-item">
+    <img src="assets/Anglerfish.jpg" alt="">
+    <span>Anglerfish</span>
+  </div>
+
+  <div class="aby-item">
+    <img src="assets/Dumbo Octopus.jpg" alt="">
+    <span>Dumbo Octopus</span>
+  </div>
+
+  <div class="aby-item">
+    <img src="assets/Giant Isopod.jpeg" alt="">
+    <span>Giant Isopod</span>
+  </div>
+
+  <div class="aby-item">
+    <img src="assets/jellyfish.jpeg" alt="">
+    <span>Jellyfish</span>
+  </div>
+
+  <div class="aby-item">
+    <img src="assets/Vampire Squid.jpeg" alt="">
+    <span>Vampire Squid</span>
+  </div>
+
+  <div class="aby-item">
+    <img src="assets/Dragonfish.jpg" alt="">
+    <span>Dragonfish</span>
+  </div>
+
+  <div class="aby-item">
+    <img src="assets/Bioluminescent Jellyfish.jpeg" alt="">
+    <span>Bioluminescence</span>
+  </div>
+
+</div>
+
+  </div>
+
+</section>
+<section class="trench" id="trench">
+
+  <h5>8,000m – 11,000m • Hadal Zone</h5>
+
+  <!-- TEXT -->
+  <div class="trench-content">
+    <h2>The Edge of the <span>Unknown</span></h2>
+    <p>
+      Pressure at 1,086 atmospheres. Near 1°C. Zero light.
+      Yet life persists — ancient and resilient in extreme darkness.
+    </p>
+  </div>
+
+  <!-- CREATURE CARDS -->
+  <div class="trench-cards">
+
+    <!-- CARD 1 -->
+    <div class="trench-card green" id="t1">
+      <h3>★ Hadal Snailfish</h3>
+      <span>8,000–8,336m</span>
+
+      <button onclick="toggleCard('t1')">+ DISCOVER</button>
+
+      <p class="card-info">
+        "The hadal snailfish holds the deepest fish record —
+        found at 8,336m in the Izu-Ogasawara Trench."
+      </p>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="trench-card yellow" id="t2">
+      <h3>▲ Sea Cucumber</h3>
+      <span>10,000–11,000m</span>
+
+      <button onclick="toggleCard('t2')">+ DISCOVER</button>
+
+      <p class="card-info">
+        "At Challenger Deep, sea cucumbers dominate the ecosystem,
+        drifting along the ocean floor like silent cleaners."
+      </p>
+    </div>
+
+  </div>
+
+  <!-- STATS -->
+  <div class="trench-stats">
+
+    <div class="stat">
+      <h4>11,034m</h4>
+      <p>MAX DEPTH</p>
+    </div>
+
+    <div class="stat">
+      <h4>1,086 atm</h4>
+      <p>PRESSURE</p>
+    </div>
+
+    <div class="stat">
+      <h4>1°C</h4>
+      <p>TEMP</p>
+    </div>
+
+    <div class="stat">
+      <h4>0%</h4>
+      <p>SUNLIGHT</p>
+    </div>
+
+  </div>
+
+  <!-- QUOTE -->
+  <div class="trench-quote">
+    <p>
+      "The sea, once it casts its spell, holds one in its net of wonder forever."
+    </p>
+    <span>— Jacques Cousteau</span>
+  </div>
+
+  <!-- BUTTON -->
+  <button class="return-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    ↑ RETURN TO SURFACE
+  </button>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+</section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
